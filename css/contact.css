@@ -1,0 +1,88 @@
+.primerSection {
+    padding: 20px 0px;
+    border-top: thin solid #33323d2f;
+    border-bottom: thin solid #33323d2f;
+}
+h1 {
+    margin-top: 0px;
+}
+.iconosContacto {
+    margin-right: 20px;
+}
+.label {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+.camposForm {
+    background: #9797971e;
+    mix-blend-mode: normal;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+.camposForm::placeholder {
+    font-family: "Public Sans", sans-serif;
+    font-size: 13px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.texto{
+    resize: none;
+
+}
+.botonForm {
+    font-family: "Public Sans", sans-serif;
+    background: #203A4C;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.mensajeError {
+    color: #ff000073;
+    font-family: 'DM Serif Display', sans-serif;
+    margin-top: 0px;
+    display: none;
+}
+.formEnviado {
+    color: green;
+    font-family: 'DM Serif Display', sans-serif;
+    margin-top: 0px;
+    display: none;
+}
+.inputsFormInvalido {
+    border-bottom: thin solid #ff000073;
+    color: #ff000073;
+}
+.camposForm::placeholder:invalid {
+    color: #ff000073;
+}
+.camposForm:valid{
+    border-bottom: thin solid inherit;
+    color: inherit;
+}
+.objetivo {
+    font-style:italic;
+    font-weight: bolder;
+}
+@media all and (min-width:600px) {
+    .primerSection {
+        border-top: thin solid #33323d2f;
+        border-bottom: thin solid #33323d2f;
+    }
+}

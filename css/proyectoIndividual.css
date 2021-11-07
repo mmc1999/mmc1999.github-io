@@ -1,0 +1,120 @@
+.primerDiv {
+    border-top: thin solid #33323d2f;
+    border-bottom: thin solid #33323d2f;
+    padding: 0px 0px 40px 0px;
+}
+.imagenMasPequeña {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.tecnologiasUsadas {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    color: #5FB4A2;
+}
+.ultimaTech {
+    margin-bottom: 40px;
+}
+.seccionAntesDespues {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: thin solid #33323d2f;
+    border-bottom: thin solid #33323d2f;
+    padding: 20px 0px;
+    position: relative;
+}
+.divAntesDespues {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: right;
+}
+.lineaDivisoria {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    background-color: #33323d2f;
+}
+.primerDivAntesDes {
+    text-align: left;
+}
+.segundoDiv {
+    align-items: flex-end;
+}
+.enlacesExterno {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.285714px;
+    color: #33323D;
+}
+.antesDespues {
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 0px;
+}
+
+@media all and (min-width:600px) {
+    .primerDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 50px) 100px;
+        gap: 0px 40px;
+        grid-template-areas: 
+        "h1 parrafo"
+        "texto parrafo"
+        "texto1 parrafo"
+        "enlace parrafo"
+        ". parrafo";
+        border-top: thin solid #33323d2f;
+        border-bottom: thin solid #33323d2f;
+    }
+    .tituloPrincipal {
+        grid-area: h1;
+        margin: 0px;
+    }
+    .parrafoSobreMi {
+        grid-area: parrafo;
+    }
+    .tecnologiasUsadas {
+        grid-area: texto;
+        margin: 0px;
+    }
+    .ultimaTech {
+        grid-area: texto1;
+    }
+    .enlacesInternos {
+        grid-area: enlace;
+        width: 200px;
+        text-align: center;
+    }
+    .segundoSectionProyectoInd {
+        margin-top: 30px;
+    }
+}
+@media all and (min-width:1000px) {
+    .primerDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .segundoSectionProyectoInd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 150px;
+    }
+    .seccionAntesDespues {
+        grid-area: antes;
+    }
+    .seccionTrabajarJuntos {
+        grid-area: trabajar;
+    }
+}

@@ -1,0 +1,32 @@
+section {
+    margin-bottom: 80px;
+}
+.imagenDelProyecto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.divProyecto {
+    padding: 0px 0px 35px 0px;
+
+} 
+.divSobreMiDivs {
+    border-top: thin solid #33323d2f;
+    border-bottom: thin solid #33323d2f;
+}
+
+@media all and (min-width:600px) {
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        
+    }
+    .divImagenCambiar {
+        order: 1;
+    }
+    .divProyecto {
+        border-top: thin solid #33323d2f;
+        border-bottom: thin solid #33323d2f;
+    }
+}

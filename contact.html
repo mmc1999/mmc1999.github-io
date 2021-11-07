@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <script src="./js/index.js"></script>
+  <title>Frontend Mentor | Contact Me</title>
+</head>
+<body>
+  <div data-include="./includes/header.html"></div>
+  <main>
+    <section class="primerSection">
+      <div>
+        <h1 class="tituloPrincipal">Ponte en contacto conmigo</h1>
+      </div>
+      <div>
+        <p class="parrafoSobreMi">Me encantaría saber en qué estás trabajando y cómo puedo ayudarte. Yo estoy actualmente buscando empleo como <span class="objetivo">frontend developer jr</span> . Mi preferencia sería encontrar un puesto en una empresa en Buenos Aires. Pero también me interesa conocer sobre oportunidades que no se ajustan a esa descripción. Soy una persona trabajadora, curiosa y positiva que siempre abordará cada tarea con un sentido de propósito y atención al detalle. No dude en consultar mis perfiles en línea a continuación.</p>
+        <div>
+          <a href="https://github.com/mmc1999">
+            <img src="./images/icons/github.svg" alt="icono de github" class="iconosContacto">
+          </a>
+          <a href="https://www.linkedin.com/in/matias-centorbi-76b1721ab/">
+            <img src="./images/icons/linkedin.svg" alt="icono de linkedin" class="iconosContacto">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p class="tituloPrincipal">Contactame</p>
+        <form action="" method="post" class="formularioPosta">
+          <label for="nombre" class="public-Sans label">Nombre</label><br>
+          <input type="text" name="name" id="nombre" placeholder="Jane Appleseed" required class="camposForm"><br>
+          <p class="mensajeError">Has ingresado mal el campo. Intentelo nuevamente.</p><br>
+          <label for="email" class="public-Sans label">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="email@ejemplo.com" required class="camposForm"><br>
+          <p class="mensajeError">Has ingresado mal el campo. Intentelo nuevamente.</p><br>
+          <label for="mensaje" class="public-Sans label">Mensaje</label><br>
+          <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="¿Como puedo ayudarte?" required class="camposForm texto"></textarea><br>
+          <p class="mensajeError">Has ingresado mal el campo. Intentelo nuevamente.</p><br>
+          <button type="submit" class="botonForm">Enviar Mensaje</button>
+          <p class="formEnviado">El formulario ha sido enviado. Gracias por contactarte</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-include="./includes/footer.html"></div>
+  <script src="./js/index2.js"></script>
+  <script src="./js/formulario.js"></script>
+</body>
+</html>

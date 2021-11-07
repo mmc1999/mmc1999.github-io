@@ -1,0 +1,321 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+.public-Sans {
+    font-family: 'Public Sans', sans-serif;
+}
+.Ibarra-Real {
+    font-family: 'Ibarra Real Nova', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.desactivarse {
+    display: none;
+}
+.nav {
+    position: fixed;
+    top: 70px;
+    right: 100%;
+    transition: right 500ms ease-in;
+}
+.activarMenu {
+    right: 22px;
+    transition: right 500ms ease-in;
+}
+.ul {
+    padding: 30px 20px;
+    margin: 0px;
+    background-color: #33323D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 200px;
+}
+.li {
+    list-style: none;
+}
+.enlaceMenu {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/*----------------------------- FIN DEL HEADER ----------------------------------------*/
+main {
+    padding: 20px;
+}
+.imagenTablet, .imagenDesktop {
+    display: none;
+}
+.imagenMobile {
+    width: 100%;
+}
+.tituloPrincipal {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+.divSobreMi { 
+    background: #203A4C;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.flechaHaciaAbajo {
+    background-color: rgba(0, 0, 0, 0.116);
+    width: 35px;
+    padding: 10px;
+}
+.flechaHaciaAbajo::after {
+    content: url("../images/icons/down-arrows.svg");
+    width: 80px;
+}
+.sobreMi {
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+.iconosTecnologias {
+    width: 50px;
+}
+.articleIcono {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.articleIcono div {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloTecnologia {
+    color: #33323D;
+    font-weight: 700;
+}
+.iconoGithub {
+    width: 85px;
+}
+.tituloSobreMi {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+.parrafoSobreMi {
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.enlacesInternos {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    border:thin solid #33323D;
+    padding: 15px;
+}
+.seccionTrabajarJuntos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seccionTrabajarJuntos h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 40px;
+}
+/*FIN DEL MAIN*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #33323D;
+    padding: 20px;
+    gap: 30px;
+}
+.primerDivFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logoFooter {
+    background-color: white;
+    color: #33323D;
+}
+.enlaceFooter {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.iconosFooter {
+    filter: brightness(0.1) invert(1);
+    margin: 0px 15px;
+}
+
+@media all and (min-width:600px) {
+    .header {
+        padding: 50px 30px;
+    }
+    .nav {
+        position: inherit;
+    }
+    .ul {
+        background-color: transparent;
+        flex-direction: row;
+        width: inherit;
+        padding: 0px;
+    }
+    .enlaceMenu {
+        color: black;
+    }
+    .enlaceMenu:hover {
+        color: #5FB4A2;
+    }
+    /*-----------------------------  FIN DEL HEADER  ---------------------------------*/
+    .imagenMobile, .imagenDesktop, .iconoMenu, .divIconoHeader  {
+        display: none;
+    }
+    .imagenTablet {
+        display: inherit;
+        width: 100%;
+    }
+    main {
+        padding: 0px 30px;
+    }
+    .primerSection {
+        position: relative;
+    }
+    .divH1 {
+        padding: 10px 40px 10px 0px;
+        width: 80%;
+        position: absolute;
+        bottom: 0%;
+        background-color: white;
+    }
+    .segundoSectionIndex {
+        margin: 50px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .articleIcono {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .seccionTrabajarJuntos {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    .seccionTrabajarJuntos h3 {
+        text-align: left;
+        width: 400px;
+    }
+    .lineaDelUltimoSeccion {
+        position: absolute;
+        width: 20%;
+        height: 1px;
+        left: 55%;
+        background: #33323d2d;
+    }
+    footer {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .primerDivFooter {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width:1000px) {
+    .header {
+        padding: 50px 100px;
+    }
+    .imagenMobile, .imagenTablet {
+        display: none;
+    }
+    .imagenDesktop {
+        display: block;
+        width: 100%;
+    }
+    main {
+        padding: 30px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .divH1 {
+        width: 30%;
+        
+    }
+    #sobremi {
+        width: 500px;
+        border-top: thin solid #33323d2f;
+        border-bottom: thin solid #33323d2f;
+    }
+    .parrafoSobreMi {
+        width: 500px;
+    }
+    .lineaDelUltimoSeccion {
+        width: 20%;
+    }
+}
