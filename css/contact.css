@@ -85,4 +85,9 @@ h1 {
         border-top: thin solid #33323d2f;
         border-bottom: thin solid #33323d2f;
     }
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
 }
